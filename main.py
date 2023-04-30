@@ -3,8 +3,8 @@ from website import create_app
 app = create_app()
 
 @app.route('/')
-def index():
-    return render_template('index.html')
+def login():
+    return render_template('login.html')
 
 # This if statement means we only run the server when we run this file instead of just importing this file
 if __name__ == '__main__':
